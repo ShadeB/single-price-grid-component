@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	background-color: hsl(204, 43%, 93%);
+	color: #fff;
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+}
+
+main {
+	max-width: 800px;
+}
+
+section {
+	padding: 2rem;
+}
+
+h1,
+h2 {
+	margin-bottom: 2rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.pricing__component {
+	overflow: hidden;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	box-shadow: 0px -2px 26px -6px rgba(0, 0, 0, 0.5);
+}
+
+.pricing__component :nth-child(1) {
+	grid-column: 1 / -1;
+}
+
+.background__green {
+	background-color: hsl(179, 62%, 43%);
+}
+
+.background__greyish-blue {
+	background-color: hsl(179, 62%, 46%);
+}
+
+.layout {
+	padding: 1.6rem;
+}
+
+.primary__heading {
+	font-size: 2.5rem;
+}
+
+.secondary__heading {
+	font-size: 1.8rem;
+}
+
+.color__green {
+	color: hsl(179, 62%, 43%);
+}
+
+.color__yellow {
+	color: hsl(71, 73%, 54%);
+}
+
+.top {
+	background-color: #fff;
+	color: hsl(218, 22%, 67%);
+}
+
+.price {
+	color: rgba(255, 255, 255, 0.4);
+	display: inline-flex;
+	align-items: center;
+}
+
+.price__large {
+	font-size: 4rem;
+	margin-right: 1rem;
+	color: #fff;
+}
+
+.signup__cta {
+	background-color: hsl(71, 73%, 54%);
+	color: #fff;
+	outline: none;
+	border: none;
+	width: 100%;
+	padding: 1.3rem 0;
+	border-radius: 0.3rem;
+	margin-top: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	box-shadow: 2px 2px 6px -4px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: 2rem;
+	}
+
+	.layout {
+		padding: 4rem;
+	}
+
+	.primary__heading {
+		font-size: 3.2rem;
+	}
+
+	.secondary__heading {
+		font-size: 2.5rem;
+	}
+}
